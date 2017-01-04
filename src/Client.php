@@ -12,9 +12,7 @@ class Client
         $this->url = $url;
         $this->client = new HttpClient(
             [
-                'defaults' => [
-                    'exceptions' => false,
-                ],
+                'http_errors' => false,
             ]
         );
     }
