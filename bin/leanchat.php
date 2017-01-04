@@ -30,4 +30,4 @@ $client = new Client('https://hooks.pubu.im/services/xxx');
 
 $return = $client->send($body);
 
-print_r($return->json());
+print_r(json_decode($return->getBody(), true));
